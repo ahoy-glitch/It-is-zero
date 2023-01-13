@@ -3,7 +3,7 @@ var number: Int = 35 + 34
 
 fun main() {
     theClearGuy()
-    println("Hi i'll tell you if a number is zero or not.\n")
+    println("Hi i'll tell you if a number is zero or not.")
     print("Press enter to continue.")
     val i = readLine()
     if (i == "") theClearGuy()
