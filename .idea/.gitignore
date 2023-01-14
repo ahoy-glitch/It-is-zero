@@ -2,5 +2,8 @@
 /shelf/
 /workspace.xml
 discord.xml
+
+#folders
 **/build/
 **/.gradle
+**/.idea
