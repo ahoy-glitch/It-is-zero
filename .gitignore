@@ -4,6 +4,6 @@
 discord.xml
 
 #folders
-**/build/
-**/.gradle
-**/.idea
+build/
+.gradle/
+.idea/
