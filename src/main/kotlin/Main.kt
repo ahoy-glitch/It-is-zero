@@ -1,9 +1,9 @@
-//Main fuction, that function will run our code
+//Main function, that function will run our code
 fun main() {
     theClearGuy()
     println("Hi i'll tell you if a number is zero or not.")
     print("Press enter to continue.")
-    val i = readLine()
+    val i = readlnOrNull()
     if (i == "") {
         //calling clear guy
         theClearGuy()
@@ -16,6 +16,9 @@ fun main() {
 
     //reading println
     val num = readln()
+    if (num == "" || num == "null") {
+        throw Error("Expected a number, but got \"$num\"" )
+    }
 
     theGuyWhoChecksTheNumber(num.toInt())
 }
@@ -35,5 +38,5 @@ fun theGuyWhoChecksTheNumber (n: Int) {
 simulating a console.clear(), bc System.out.exec("cls") don't work in IDE
 */
 fun theClearGuy() {
-    for (x in 10000 downTo 0 step 1) println();
+    for (x in 10000 downTo 0 step 1) println()
 }
